@@ -42,5 +42,11 @@ public class BinarySearchTreeTest {
         Assertions.assertEquals(13, tree.size(root));
         System.out.println("match");
     }
+
+    @Test
+    public void tree_search() {
+        Assertions.assertEquals(true, tree.search(root, 63));
+        System.out.println("Number found");
+    }
 }
 
