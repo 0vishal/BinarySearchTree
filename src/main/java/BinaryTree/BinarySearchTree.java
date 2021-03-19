@@ -1,7 +1,6 @@
 package BinaryTree;
 
 
-import org.w3c.dom.Node;
 public class BinarySearchTree <T extends Comparable<T>> {
 
     public void insert(Node<T> root, T data){
@@ -30,6 +29,14 @@ public class BinarySearchTree <T extends Comparable<T>> {
             inOrder(root.left);
             System.out.println(root.data);
             inOrder(root.right);
+        }
+    }
+
+    public int size(Node<T> root){
+        if(root == null){
+            return 0;
+        }else{
+            return 1 + size(root.left) + size(root.right);
         }
     }
 }

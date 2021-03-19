@@ -1,3 +1,4 @@
 BinaryTree/BinarySearchTree.java
  BinaryTree.BinarySearchTree
- BinaryTree.BinarySearchTree$Node
+BinaryTree/Node.java
+ BinaryTree.Node
